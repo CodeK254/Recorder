@@ -176,7 +176,7 @@ class DesktopView extends StatelessWidget {
                                   repeatForever: false,
                                   animatedTexts: [
                                     TypewriterAnimatedText(
-                                                      """
+                            """
                               Meeting Summary:
                               
                               [00:01 - 00:05] Introductions
