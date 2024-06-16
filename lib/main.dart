@@ -6,12 +6,14 @@ import 'package:recoding/views/mobile_view/mobile_home.dart';
 
 void main() {
   runApp(
-    const GetMaterialApp(
+    GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Responsiveness(
-        mobileBody: MobileView(), 
-        desktopBody: DesktopView(),
-      ),
+      routes: {
+        "/": (context) => const Responsiveness(
+          mobileBody: MobileView(), 
+          desktopBody: DesktopView(),
+        ),
+      },
     )
   );
 }
